@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Feet : Comfort is here</title>
+    <link rel="icon" href="./assets/header-logo.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/mediaquery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="flex">
+        <a href="index.html" class="logo">
+            <img src="./assets/logo.jpg" alt="First Feet">
+        </a>
+        <nav class="navigation flex">
+            <ul id="nav-bar" class="primary-list flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active-page" href="contact.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a id="shopping-bag" class="cart-icon" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close-nav" class="shoppingIcon"><i class="fa-solid fa-circle-xmark"></i></a>
+            </ul>
+            <div id="hamburger">
+                <a class="shoppingIcon" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="ham-bar" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation End -->
+    <!-- Banner -->
+    <section class="contact-banner flex">
+        <h2>#Let's_talk</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eaque molestias obcaecati ex! Tempora quia, libero officiis dolorem repellat harum quidem excepturi beatae eligendi culpa recusandae cupiditate sapiente nam dignissimos, error omnis reprehenderit odit odio? Quos, optio porro assumenda rem cupiditate ullam quasi dolorum aliquid sint ratione labore odio velit.</p>
+    </section>
+    <!-- Banner End -->
+    <!-- Contact Details -->
+    <section class="contact-main flex section-p1 section-m1">
+        <div class="contact-address">
+            <h4>GET IN TOUCH</h4>
+            <h3>Visit Our Office or Contact us Today</h3>
+            <span>Head Office</span>
+            <div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>local street, local area, local City, local state, Your Country</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>chetramaaseri@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+91) 99887 66554</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock"></i>
+                        <p>10:00 AM to 5:00 PM</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.365147507!2d75.78663285138968!3d30.900326335604067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1669969779004!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Contact Details End -->
+    <!-- Contact Form -->
+    <section class="contact-form section-p1 section-m1">
+        <form action="" class="flex">
+            <h4>LEAVE A MESSAGE</h4>
+            <h2>We love to hear from you</h2>
+            <span id="form-name-error"></span>
+            <input type="text" oninput="isTextValid('form-name-error')" placeholder="Your Name">
+
+            <span id="form-email-error"></span>
+            <input type="email" oninput="isEmailValid('form-email-error')" placeholder="Your E-mail">
+
+            <span id="form-subject-error"></span>
+            <input type="text" oninput="isTextValid('form-subject-error')" placeholder="Subject">
+
+            <span id="form-textarea-error"></span>
+            <textarea cols="30" rows="10" oninput="isTextValid('form-textarea-error')" placeholder="Your Message"></textarea>
+            <button onsubmit="checkAllForm()" type='button' id="form-submit-btn" class="button_1">Submit</button>
+        </form>
+    </section>
+    
+    <!-- Contact Form  End-->
+    <!-- Newsletter Start -->
+    <section class="newsletter section-p1 section-m1 flex">
+        <div class="news-text">
+            <h4>Sign up for Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form flex">
+            <span id="newsletter-error"></span>
+            <input oninput="isEmailValid('newsletter-error')" type="email" name="email" placeholder="Your email address">
+            <button id="newsletter-submit" type="submit" class="button_1">Sign Up</button>
+        </div>
+    </section>
+    <!-- Newsletter End -->
+    <!-- Footer Start -->
+    <footer class="section-p1 flex">
+        <div class="column flex">
+            <img class="logo" src="/assets/logo2.png" alt="">
+            <h2>Contact</h2>
+            <p><b>Address:</b> local street, local area, local City, local state</p>
+            <p><b>Phone:</b> (+91) 99887 66554</p>
+            <p><b>Working hours:</b> 10:00 AM to 5:00 PM</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="column flex">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="column flex">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="column flex payment-getway">
+            <h4>Install App</h4>
+            <p>from App Store or Google Play</p>
+            <div class="row">
+                <img src="/assets/app.jpg" alt="">
+                <img src="/assets/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/assets/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2022 Local Company Limited</p>
+        </div>
+    </footer>
+    <div id="submit-popup" class="newsletter-submit">
+        <img src="/assets/tick.png">
+        <h2>Thank You!</h2>
+        <p id="form-submit-edit">You Have Been Succesfully Subscribed Our Newsletter</p>
+        <button id="submited-ok" class="button_2">Ok</button>
+    </div>
+    <!-- Footer End -->
+    <script src="./js/main.js"></script>
+    <script src="/js/contact.js"></script>
+    <script src="https://kit.fontawesome.com/98da1090c7.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

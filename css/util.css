@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Global Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+:root{
+    
+    --black-text-colour: rgb(0,0,0);
+
+    --theme-bglight-colour: #dae2d5; 
+    --theme-bgdark-colour: #062a27;
+    --theme-bglight2-colour: #efeded;
+    --theme-dark-bold-colour:#041e42;
+
+    --theme-highlight-colour:#24867f;
+    --theme-highlight2-colour:#b82d1f;
+    --theme-highlight3-colour:#eeb9b4;
+
+    --primary--icon-colour: #4d4f5a;
+
+    --rating-star-colour: #FDCC0D;
+
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--black-text-colour);
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--black-text-colour);
+}
+
+h3{
+    font-size: 30px;
+    color: var(--black-text-colour);
+}
+h4{
+    font-size: 20px;
+    color: var(--black-text-colour);
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: var(--black-text-colour);
+    margin: 15px 0 20px 0;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+}
+
+/* Global Styling End */
+/* Utility Classes */
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover:hover{
+    color: var(--theme-highlight2-colour);
+}
+
+.active-page{
+    color: var(--theme-highlight2-colour) !important;
+}
+.active-page::after {
+	content: "";
+	width: 40%;
+    height: 2px;
+    background-color: var(--theme-highlight2-colour);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.button_1{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: var(--theme-bgdark-colour);
+    transition: 0.3s ease-out;
+}
+.button_1:hover{
+    color: rgb(0,0,0);
+    border: none;
+    background-color:  var(--theme-highlight3-colour) ;
+}
+
+.button_2{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    border: 2px solid var(--theme-bgdark-colour);
+    background-color: var(--theme-bgdark-colour);
+    transition: 0.3s ease-out;
+}
+.button_2:hover{
+    color: rgb(0,0,0);
+    background-color:  white;
+}
+ /* Utility Classes end*/
+
+/* Common Components Start */
+
+
+
+
+
+
+
+
+
+/* Common Components End */
+
+
+
+
+
+
+
+
+

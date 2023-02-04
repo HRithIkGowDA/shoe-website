@@ -1,0 +1,239 @@
+/* Med Screen Devices */
+@media (max-width:821px) {
+    .section-p1{
+        padding: 20px;
+    }
+    .section-m1 {
+        margin: 10px 0;
+    }
+    /* Homepage */
+    /* Navbar */
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background-color: var(--theme-bglight-colour);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 1s;
+    }
+    #nav-bar.active{
+        right: 0px;
+    }
+    #nav-bar li{
+        margin-bottom: 25px;
+    }
+    #hamburger{
+        display: flex;
+    }
+    #hamburger i{
+        color: var(--primary--icon-colour);
+        font-size: 24px;
+        padding-left: 25px;
+    }
+    #close-nav {
+        display: initial;
+        color: var(--primary--icon-colour) !important;
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        font-size: 30px !important;
+    }
+    #shopping-bag{
+        display: none;
+    }
+    /* Hero Section */
+    .hero-section {
+        height: 520px;
+        padding: 20px 10px 10px 10px;
+        background-position: top 0px right 0%;
+    }
+    /* Feature Section */    
+    .feature .feature-container {
+        padding-block: 15px;
+    }
+    .feature .feature-container .feature-box i {
+        font-size: 50px;
+    }
+    /* Product Section */    
+    .products .product-container {
+        justify-content: space-around;
+    }
+    .products .product-details .cart-icon {
+        bottom: 10px;
+        right: 15px;
+    }
+    /* Banner Section */    
+    .banner {
+        height: 20vh;
+    }
+    
+    .offers-banner .offer-banner-box {
+        min-width: 48%;
+        height: 30vh;
+        justify-content:center;
+    }
+    .text-banner {
+        padding: 0 20px;
+    }
+
+    .text-banner .banner-box {
+        width: 32%;
+        height: 20vh;
+    }
+    .text-banner h2 {
+        font-size: 22px;
+    }
+    /* Newsletter Section */    
+    .newsletter {
+        justify-content: center;
+    }
+    .news-text {
+        text-align: center;
+    }
+    .newsletter .form {
+        width: 80%;
+    }
+    /* Home Page */
+
+    /* Single Product Description Page */
+    /* Single Product ImG Section */
+    #single-product-details .single-product-img {
+        margin-right: 0;
+    }
+    
+    .small-img-group {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 19px;
+    }
+    .small-img-colomn {
+        height: 100%;
+        flex-basis: 30%;
+    }
+    /* Single Product Text */
+    #single-product-details .single-product-description {
+        width: 80%;
+        padding-left: 21px;
+        padding-top: 15px;
+    }
+    /* Single Product Description Page */
+
+    /* Contact Html */
+    /* Contact Banner */
+    .contact-banner {
+        height: 20vh;
+    }
+    /* Contact Form */
+    .contact-form form {
+        max-width: 70%;
+        padding-left: 30px;
+    }
+    .contact-form form button {
+        right: -120px;
+        bottom: 5px;
+    }
+    /* Contact Html */   
+
+    /* Cart Page */
+    .sub-total {
+        width: 50%;
+    }
+    /* Cart Page */
+
+}
+
+/* Small Screen Devices */
+@media (max-width:481px) {
+    /* Header */
+    header {
+        padding: 10px 20px;
+    }
+    /* Hero Section */
+    .hero-section {
+        height: 250px;
+    }
+    .hero-section .hero-details {
+        padding-left: 15px;
+        min-width: 100%;
+    }
+    /* Feature Section */
+    .feature .feature-container .feature-box i {
+        font-size: 30px;
+    }
+    /* Banner */
+    .banner {
+        height: 35vh;
+    }
+    .offers-banner {
+        justify-content: center;
+        gap: 10px;
+    }
+    .text-banner .banner-box {
+        width: 100%;
+        height: 160px;
+    }
+    /* Newsletter */
+    .newsletter .form {
+        width: 100%;
+    }
+    /* contact page  */
+    .contact-banner {
+        height: 45vh;
+    }
+    .contact-main .contact-map {
+        width: 100%;
+    }
+    .contact-form form {
+        max-width: 95%;
+        padding-left: 5px;
+    }
+    .contact-form form button {
+        right: -20px;
+        bottom: -40px;
+    }
+    .contact-form form span {
+        left: 0;
+        top: 0px;
+    }
+    .newsletter {
+        margin-top: 30px;
+    }
+    .newsletter .form span {
+        top: 100px;
+    }
+    .newsletter-submit {
+        width: 80%;
+    }
+    .cart table {
+        width: 175%;
+    }
+    .cart-add {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coupon {
+        width: 100%;
+    }
+    .sub-total {
+        width: 100%;
+    }
+    #single-product-details {
+        flex-direction: column;
+    }
+    .small-img-group {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    #single-product-details .single-product-description {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+}
