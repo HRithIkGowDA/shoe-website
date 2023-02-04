@@ -1,4 +1,4 @@
 # first-feet-ecommerce
 Ecommmerce mennSneaker Store Using HTML, CSS & JavaScript
 
-Site is Live on https://feet-first-ecommerce.netlify.app/
+Site is Live on https://hrithikgowda.github.io/shoe-website/
